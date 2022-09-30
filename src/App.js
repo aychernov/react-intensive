@@ -13,19 +13,21 @@ class App extends Component {
       const textareas = document.querySelectorAll('textarea');
       [...inputs, ...textareas].map((item) => (item.value = ''));
     };
+
+    // Используем formData и записываем данные в res{}
+    this.handleSubmit = (event) => {
+      const formData = new FormData(event.currentTarget);
+      event.preventDefault();
+      const res = {}
+      for (let [key, value] of formData.entries()) {
+        // console.log(key + ':', value)
+        res[key] = value
+      }
+      alert(JSON.stringify(res, null, 1));
+    };
+
   }
 
-  // Используем formData и записываем данные в res{}
-  handleSubmit = (event) => {
-    const formData = new FormData(event.currentTarget);
-    event.preventDefault();
-    const res = {}
-    for (let [key, value] of formData.entries()) {
-      // console.log(key + ':', value)
-      res[key] = value
-    }
-    alert(JSON.stringify(res, null, 1));
-  };
 
 
 
