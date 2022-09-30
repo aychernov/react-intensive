@@ -1,0 +1,65 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #e2c9c3;
+}
+
+.wrapper{
+
+
+}
+
+form {
+	margin: 0 auto;
+	width: 500px;
+	display: block;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+.head{
+	text-align: center;
+	color: #eb6c4c;
+}
+
+label {
+	display: block;
+	line-height: 36px;
+}
+input,
+textarea {
+	width: 100%;
+	padding: 10px;
+	background: none;
+	border: 1px solid #03292e;
+	color: black;
+	font-size: 1rem;
+	outline: none;
+	margin-bottom: 10px;
+}
+input:focus,
+textarea:focus{
+	background-color: #73ad4465;
+}
+button {
+	border: 1px solid #61dafb;
+	outline: none;
+	width: 200px;
+	height: 50px;
+	cursor: pointer;
+}
+button.cancel {
+	background: #a96d8e;
+	margin-right: 25px;
+	font-weight: bold;
+}
+button.save {
+	background: #74ad44;
+	margin-left: 25px;
+	font-weight: bold;
+}
+
+button:active{
+	transform: scale(.9);
+}
